@@ -3,7 +3,7 @@
 
 import pandas as pd
 #Load the creditcard.csv using pandas
-datainput = pd.read_csv("s3://myawscloud.uk/creditcard.csv")
+datainput = pd.read_csv("https://s3.ap-south-1.amazonaws.com/myawscloud.uk/creditcard.csv")
 false = datainput[datainput['Class'] == 1]
 true = datainput[datainput['Class'] == 0]
 n = len(false)/float(len(true))
